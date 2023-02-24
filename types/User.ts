@@ -1,9 +1,14 @@
 export interface User {
   id: string;
   name: string;
-  gamesPlayed: number;
-  winRate: number;
+  wins: number;
+  runnerUp: number;
+  winRate: number | null;
   totalWinnings: number;
   totalSpending: number;
-  netGain: number;
+  netWinnings: number;
+  quads: number;
+  straightFlush: number;
+  firstEliminated: number;
+  gameHistory: string[];
 }

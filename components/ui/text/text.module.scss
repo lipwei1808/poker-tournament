@@ -1,0 +1,138 @@
+$black: #222;
+$white: #fff;
+
+.h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+  font-family: Roboto, sans-serif;
+}
+
+.h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  font-family: Roboto, sans-serif;
+}
+
+.h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.h4 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  font-family: Roboto, sans-serif;
+}
+
+.h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  font-family: Roboto, sans-serif;
+}
+
+.body1 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-family: Roboto, sans-serif;
+}
+
+.body2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  font-family: Roboto, sans-serif;
+}
+
+.subtitle1 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.00938em;
+  font-family: Roboto, sans-serif;
+}
+
+.subtitle2 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+  font-family: Roboto, sans-serif;
+}
+
+.caption {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  font-style: italic;
+  font-family: Roboto, sans-serif;
+}
+
+.default {
+  color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.red {
+  color: theme('colors.red.500');
+}
+
+.primary {
+  color: theme('colors.violet.600');
+}
+
+.secondary {
+  color: #848484;
+}
+
+.alignment {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+.underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size 0.3s;
+  position: relative;
+
+  &:hover {
+    background-size: 100% 2px;
+  }
+}

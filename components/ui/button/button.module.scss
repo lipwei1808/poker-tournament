@@ -1,0 +1,148 @@
+$black: #222;
+$white: #fff;
+
+.base {
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, -ms-transform 0.1s ease, -webkit-transform 0.1s ease,
+    transform 0.1s ease !important;
+}
+
+.default {
+  &-solid {
+    background-color: $black;
+    color: $white;
+    border-color: $black;
+    border-width: 1px;
+
+    &:hover {
+      background-color: theme('colors.gray.700');
+    }
+  }
+
+  &-outline {
+    background-color: $white;
+    color: $black;
+
+    &:hover {
+      background-color: theme('colors.gray.200');
+    }
+  }
+
+  &-ghost {
+    border-width: 0;
+    background-color: transparent;
+    color: $black;
+
+    &:hover {
+      background-color: theme('colors.gray.200');
+    }
+  }
+}
+
+.primary {
+  &-solid {
+    background-color: theme('colors.violet.600');
+    color: $white;
+    border-color: theme('colors.violet.600');
+    border-width: 1px;
+
+    &:hover {
+      background-color: theme('colors.violet.700');
+    }
+  }
+
+  &-outline {
+    background-color: $white;
+    color: theme('colors.violet.600');
+
+    &:hover {
+      background-color: theme('colors.violet.100');
+    }
+  }
+
+  &-ghost {
+    border-width: 0;
+    background-color: transparent;
+    color: theme('colors.violet.600');
+
+    &:hover {
+      background-color: theme('colors.violet.100');
+    }
+  }
+}
+
+.success {
+  &-solid {
+    background-color: theme('colors.teal.500');
+    color: $white;
+    border-color: theme('colors.teal.500');
+    border-width: 1px;
+
+    &:hover {
+      background-color: theme('colors.teal.600');
+    }
+  }
+
+  &-outline {
+    background-color: $white;
+    color: theme('colors.teal.500');
+
+    &:hover {
+      background-color: theme('colors.teal.100');
+    }
+  }
+
+  &-ghost {
+    border-width: 0;
+    background-color: transparent;
+    color: theme('colors.teal.600');
+
+    &:hover {
+      background-color: theme('colors.teal.100');
+    }
+  }
+}
+
+.warning {
+  &-solid {
+    background-color: theme('colors.red.500');
+    color: $white;
+    border-color: theme('colors.red.500');
+    border-width: 1px;
+
+    &:hover {
+      background-color: theme('colors.red.600');
+    }
+  }
+
+  &-outline {
+    background-color: $white;
+    color: theme('colors.red.500');
+
+    &:hover {
+      background-color: theme('colors.red.100');
+    }
+  }
+
+  &-ghost {
+    border-width: 0;
+    background-color: transparent;
+    color: theme('colors.red.600');
+
+    &:hover {
+      background-color: theme('colors.red.100');
+    }
+  }
+}
+
+.sm {
+  padding: 0.25rem 0.75rem;
+}
+
+.md {
+  padding: 0.5rem 1rem;
+}
+
+.lg {
+  padding: 0.6875rem 1.5rem;
+}
